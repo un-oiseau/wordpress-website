@@ -1,0 +1,125 @@
+header {
+    background: #111;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.page-wrapper {
+    padding: 2rem 0;
+}
+
+header .top-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+header .top-bar li {
+    position: relative;
+}
+
+header .top-bar li a{
+    padding: .25rem 1rem;
+    color:rgb(233, 153, 49)
+}
+
+header .top-bar li:first-child a {
+    padding-left: 0;
+}
+
+header .top-bar li:last-child a {
+    padding-right: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+}
+
+header .top-bar .menu-item-has-children .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(194, 186, 186);
+    box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 200px;
+    border-radius: 1rem;
+    z-index: 10;
+}
+
+header .top-bar > .menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+header .top-bar > .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu{
+    display: block;
+}
+header .top-bar li .sub-menu a {
+    color: #6505ff;
+    padding: .7rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+header .top-bar .menu-item-has-children .sub-menu a:hover {
+    color: rgb(192, 16, 236);
+}
+
+header .top-bar .sub-menu li .sub-menu {
+    top: 0;
+    left: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.widget {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.enquiry-form .gform_button.button {
+    width: 100%;
+    background: green;
+    color: white;
+    border: 0;
+    padding: 1rem;
+}
+
+.enquiry-form .gform_footer {
+    margin: 0;
+}
+
+.enquiry-form input, 
+.enquiry-form textarea {
+    width: 100%;
+    outline: none;
+    padding: .5rem;
+    border: 1px solid rgb(219, 219, 219);
+}
+.ginput_complex {
+    display: flex;
+    gap: 10px;
+}
+
+.ginput_complex span {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.ginput_complex span label {
+    order: 1;
+}
+.enquiry-form .gform_confirmation_message {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.enquiry-form .gfield {
+    padding: .5rem 0;
+}
