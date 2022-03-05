@@ -55,7 +55,7 @@ register_nav_menus(
 
 // Custom image sizes
 
-add_image_size('home-large', 1280, 600, false);
+add_image_size('home-large', 1280, 600, true);
 add_image_size('contact-large', 1280, 600, false);
 add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-small', 300, 200, true);
