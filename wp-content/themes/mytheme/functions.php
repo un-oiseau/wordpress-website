@@ -155,3 +155,11 @@ function register_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 
+
+// Shortcodes
+
+function my_shortcode() 
+{
+    return 'hello';
+}
+add_shortcode('latest_cars', 'my_shortcode');
